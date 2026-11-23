@@ -31,19 +31,6 @@ docker run --rm -p 5000:5000 devops-ai-demo
 
 Ouvrez ensuite <http://localhost:5000>.
 
-## Erreurs à corriger pour le demo
-
-1. Dans `app.py`, importer `jsonify` depuis Flask :
-
-```python
-from flask import Flask, jsonify
-```
-
-2. Dans `app.py`, faire écouter Flask sur toutes les interfaces réseau :
-
-```python
-app.run(host="0.0.0.0", port=5000)
-```
 
 3. Dans le `Dockerfile`, exposer le même port que l'application :
 
